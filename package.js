@@ -16,7 +16,7 @@ Package.onUse(function (api) {
 
 
 Package.onTest(function(api) {
-  api.use(['coffeescript', 'practicalmeteor:underscore-deep', 'spacejamio:munit']);
+  api.use(['coffeescript', 'practicalmeteor:underscore-deep', 'spacejamio:munit@2.1.1']);
 
   api.addFiles('tests/underscore-deep-test.coffee');
 });
