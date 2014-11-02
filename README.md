@@ -1,35 +1,28 @@
-[![Build Status](https://travis-ci.org/spacejamio/meteor-loglevel.svg?branch=master)](https://travis-ci.org/spacejamio/meteor-loglevel)
+[![Build Status](https://travis-ci.org/practicalmeteor/meteor-underscore-deep.svg?branch=master)](https://travis-ci.org/practicalmeteor/meteor-underscore-deep)
 
 ## Overview
-A meteor package wrapping [loglevel.js](https://github.com/pimterry/loglevel), a minimal lightweight logging library, adding reliable log level methods to wrap any available console.log methods, with output that keeps line numbers.
 
-## Supported Meteor Versions
+Gets the value of a nested property. Returns undefined if it doesn't exist. Example:
 
-0.9.3 and above, since it uses the new meteor "wrapped package" version numbers.
+```javascript
+var obj = {
+  a: {
+    b: {
+      c: {
+        d: 'val'
+      }
+    }
+  }
+};
 
-## API Summary
+// returns: 'val'
+_.deep(obj, 'a.b.c.d'); 
 
-```
-log.trace(msg);
-log.debug(msg);
-log.info(msg);
-log.warn(msg);
-log.error(msg);
-log.setLevel(level); # Any of the levels above.
-log.enableAll();
-log.disableAll();
-```
+// returns: {d: 'val'}
+_.deep(obj, 'a.b.c');
 
-## Meteor.settings
-
-`Meteor.settings.loglevel` - set server side log level.
-
-`Meteor.settings.public.loglevel` - set client side log level.
-
-## Detailed Documentation
-Can be found at the [loglevel](https://github.com/pimterry/loglevel) github homepage.
+// returns: undefined
+_.deep(obj, 'a.b.e');
 
 ## License
-loglevel - [MIT](https://github.com/pimterry/loglevel/blob/master/LICENSE-MIT)
-
-spacejamio:loglevel - [MIT](https://github.com/spacejamio/meteor-loglevel/blob/master/LICENSE.txt)
+[MIT](https://github.com/practicalmeteor/meteor-underscore-deep/blob/master/LICENSE.txt)
