@@ -1,8 +1,8 @@
 Package.describe({
   name: "practicalmeteor:underscore-deep",
-  summary: "Internal testing of publishing release candidate package versions.",
-  version: "1.0.0",
-  git: "https://github.com/spacejamio/meteor-loglevel.git"
+  summary: "_.deep - get the value of a nested property.",
+  version: "0.9.0",
+  git: "https://github.com/practicalmeteor/meteor-underscore-deep"
 });
 
 
