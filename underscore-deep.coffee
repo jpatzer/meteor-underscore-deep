@@ -38,18 +38,18 @@ _.mixin({
     if keys.length is 0 then obj else undefined
 
 
-  deepest: (obj, key)->
-    if (typeof obj is not 'object' or typeof key is not 'string' or not key)
-      return undefined
-
-    keys = key.split('.')
-
-    key = keys.pop()
-    value = oby[key] if type of obj[key] is not undefined
-
-    while typeof obj is 'object' and keys.length > 0
-      value = oby[key]
-      obj = obj[keys.shift()]
-
-    if keys.length is 0 then obj else undefined
+#  deepest: (obj, key)->
+#    if (typeof obj is not 'object' or typeof key is not 'string' or not key)
+#      return undefined
+#
+#    keys = key.split('.')
+#
+#    key = keys.pop()
+#    value = oby[key] if type of obj[key] is not undefined
+#
+#    while typeof obj is 'object' and keys.length > 0
+#      value = oby[key]
+#      obj = obj[keys.shift()]
+#
+#    if keys.length is 0 then obj else undefined
 })
