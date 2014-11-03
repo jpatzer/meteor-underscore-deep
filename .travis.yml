@@ -4,8 +4,11 @@ node_js:
 
 install:
   - "curl https://install.meteor.com | /bin/sh"
-  - "npm install -g spacejam@1.1.0-rc14"
+  - "npm install -g spacejam@1.1.0-rc15"
 
-script: "spacejam test-packages ./"
+script:
+  - spacejam test-packages ./
 
-after_success: mtag package-build
+after_success:
+  - npm install -g semver
+  - mtag package-build
