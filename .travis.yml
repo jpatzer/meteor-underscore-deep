@@ -4,7 +4,7 @@ node_js:
 
 install:
   - "curl https://install.meteor.com | /bin/sh"
-  - "npm install -g spacejam@1.1.0-rc15"
+  - "npm install -g spacejam"
 
 script:
   - spacejam test-packages ./
