@@ -23,6 +23,7 @@ _.deep(obj, 'a.b.c');
 
 // returns: undefined
 _.deep(obj, 'a.b.e');
+```
 
 ## License
 [MIT](https://github.com/practicalmeteor/meteor-underscore-deep/blob/master/LICENSE.txt)

@@ -1,7 +1,7 @@
 Package.describe({
   name: "practicalmeteor:underscore-deep",
   summary: "_.deep - get the value of a nested property.",
-  version: "0.9.0",
+  version: "0.9.1",
   git: "https://github.com/practicalmeteor/meteor-underscore-deep"
 });
 
