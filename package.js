@@ -1,7 +1,7 @@
 Package.describe({
   name: "practicalmeteor:underscore-deep",
   summary: "_.deep - get the value of a nested property.",
-  version: "0.9.1",
+  version: "0.9.2",
   git: "https://github.com/practicalmeteor/meteor-underscore-deep"
 });
 
@@ -16,7 +16,7 @@ Package.onUse(function (api) {
 
 
 Package.onTest(function(api) {
-  api.use(['coffeescript', 'practicalmeteor:underscore-deep', 'spacejamio:munit@2.1.1']);
+  api.use(['coffeescript', 'practicalmeteor:underscore-deep', 'practicalmeteor:munit@2.1.2']);
 
   api.addFiles('tests/underscore-deep-test.coffee');
 });
