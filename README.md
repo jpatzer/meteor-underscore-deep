@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/jpatzer/meteor-underscore-deep.svg)](https://travis-ci.org/jeffpatzer/meteor-underscore-deep)
-
 ## Overview
 
 Gets the value of a nested property. Returns undefined if it doesn't exist. Example:
