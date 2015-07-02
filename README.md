@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jpatzer/meteor-underscore-deep.svg)](https://travis-ci.org/practicalmeteor/meteor-underscore-deep)
+[![Build Status](https://travis-ci.org/jpatzer/meteor-underscore-deep.svg)](https://travis-ci.org/jeffpatzer/meteor-underscore-deep)
 
 ## Overview
 
