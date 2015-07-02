@@ -23,5 +23,19 @@ _.deep(obj, 'a.b.c');
 _.deep(obj, 'a.b.e');
 ```
 
+```javascript
+var arr = [{
+  deeply: {
+    nested: 'foo'
+  }
+}, {
+  deeply: {
+    nested: 'bar'
+  }
+}];
+
+_.pluckDeep(arr, 'deeply.nested'); // ['foo', 'bar']
+```
+
 ## License
 [MIT](https://github.com/practicalmeteor/meteor-underscore-deep/blob/master/LICENSE.txt)

@@ -1,7 +1,7 @@
 Package.describe({
   name: "jeffpatzer:underscore-deep-utilities",
-  summary: "_.deep, _.pluckDeep, _.unpick",
-  version: "0.1.1",
+  summary: "_.deep, _.pluckDeep",
+  version: "0.1.2",
   git: "https://github.com/jpatzer/meteor-underscore-deep"
 });
 
@@ -13,7 +13,6 @@ Package.onUse(function (api) {
 
   api.addFiles('underscore-deep.coffee');
   api.addFiles('underscore-deep-pluck.js');
-  api.addFiles('underscore-deep-unpick.js');
 });
 
 

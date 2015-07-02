@@ -66,10 +66,3 @@ describe 'deep', ->
       {key1: {key2: 'bar'}}
     ]
     test.equal(_.pluckDeep(arr, 'key1.key2'), ['foo', 'bar'])
-
-  it 'should unpick out values', (test)->
-    obj =
-      key1:
-        key2: 'foo'
-      key2: 'bar'
-    test.equal(_.unpick(obj, 'key1'), {key2: 'bar'})
