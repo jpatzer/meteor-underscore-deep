@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/practicalmeteor/meteor-underscore-deep.svg?branch=master)](https://travis-ci.org/practicalmeteor/meteor-underscore-deep)
+[![Build Status](https://travis-ci.org/jpatzer/meteor-underscore-deep.svg)](https://travis-ci.org/practicalmeteor/meteor-underscore-deep)
 
 ## Overview
 
@@ -16,7 +16,7 @@ var obj = {
 };
 
 // returns: 'val'
-_.deep(obj, 'a.b.c.d'); 
+_.deep(obj, 'a.b.c.d');
 
 // returns: {d: 'val'}
 _.deep(obj, 'a.b.c');
